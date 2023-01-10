@@ -1,0 +1,30 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    max-width: 500px;
+}
+
+header, footer {
+    display: flex;
+    background-color: navy; 
+    padding: 15px;
+    color: #fff;
+}
+
+header {
+    grid-template-columns: 3fr;
+}
+
+header img {
+    grid-column: 1/2;
+    padding-right: 20px;
+}
+
+header h1 {
+    grid-column: 2/4;
+    align-content: center;
+}
