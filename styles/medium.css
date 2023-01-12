@@ -1,0 +1,9 @@
+@media only screen and (min-width: 32.5em){
+    body {
+        align-items: left;
+        font-size: 0.8rem;
+    }
+    header img {
+        size: .6rem;
+    }
+}
