@@ -13,3 +13,21 @@ body p {
     font-family: Rubik, Lato;
     color: #a78661;
 }
+
+header {
+    display: flex;
+    font-family: Rubik, Lato;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #cbb8a2;
+    align-items: center;
+}
+
+header img {
+    max-width: 140px;
+}
+
+nav a:hover {
+    background-color: #cbb8a2;
+    color: #9c89b8;
+}
