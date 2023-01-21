@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Rubik&family=Solitreo&family=Spectral&display=swap');
+
+/*67574f-ffffff-a78661-cbb8a2-9c89b8*/
+
+body h1 {
+    font-size: 26px;
+    font-family: Merriweather, Spectral, 'Times New Roman';
+    color: #67574f;
+}
+
+body p {
+    font-size: 18px;
+    font-family: Rubik, Lato;
+    color: #a78661;
+}
