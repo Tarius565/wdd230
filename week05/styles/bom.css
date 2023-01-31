@@ -56,11 +56,6 @@ ul {
 	padding: 15px;
 }
 
-ul button {
-	color: rgba(255, 0, 0, 0.557);
-	font-size: 1.2rem;
-}
-
 li {
 	display: flex;
 	align-items: center;
