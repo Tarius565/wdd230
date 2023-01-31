@@ -16,7 +16,7 @@ function onClick () {
         listChapter.appendChild(listText);
         listText.textContent = addedScripture;
         listChapter.appendChild(listBtn);
-        listBtn.textContent = '✖';
+        listBtn.textContent = '❌';
 
         list.appendChild(listChapter);
 
