@@ -10,7 +10,7 @@
       content="The project provides opportunities to apply the concepts presented 
       in the weeks by planning, designing, developing, and maintaining a chamber site related site."
     />
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -32,20 +32,32 @@
     />
   </head>
   <body>
-    <header>
-      <a id="logo_link" href="index.html">
-        <img src="images/logo.png" alt="Gilbert Chamber of Commerce logo" />
-      </a>
-      <input type="checkbox" id="menu-bar" />
-      <label for="menu-bar">Menu</label>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="target-audience.html">Target Audience</a></li>
-          <li><a href="design.html">Design</a></li>
-        </ul>
-      </nav>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a id="logo_link" href="index.html">
+            <img src="images/logo.png" alt="Gilbert Chamber of Commerce logo" />
+          </a>
+          <button class="mobile-nav-toggle">
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+            <img class="icon-close" src="images/icon-close.svg" alt="" />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="target-audience.html">Target Audience</a></li>
+              <li><a href="design.html">Design</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
+
     <main>
       <div id="hero">
         <div id="hero-box">
@@ -56,22 +68,95 @@
           <h4>is here to help you grow and strengthen your business.</h4>
         </section>
       </div>
-      <div id="news">
-        <h2>Lorem Ipsum</h2>
+      <div id="event">
+        <h2>Ribbon Cutting</h2>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      </p>
+          We have a new business opening its doors for the first time. click
+          <a href="#">here</a> for more info.
+        </p>
+      </div>
+      <div id="weather">
+        <h2>Weather of the Day</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div id="join">
+        <h2>Button (Join Us)</h2>
+        <p>
+          Discover how to join the community within the chamber of commerce and
+          how it can benefit you and your organization.
+        </p>
+      </div>
+      <div id="news">
+        <h2>News Release</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="container-spotlight">
+        <div class="spotlight" id="spotlight1">
+          <h2>Spotlight event 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="spotlight" id="spotlight2">
+          <h2>Spotlight event 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="spotlight" id="spotlight3">
+          <h2>Spotlight event 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
       </div>
     </main>
+
     <footer>
-      <span id="copyright"></span> | Tanner Levi | Arizona
-      <span id="dateModified"></span>
+      <div id="chamberInfo">
+        <div id="chamberLocationInfo">
+          <img src="images/logo.png" alt="Gilbert Chamber of Commerce Logo" />
+          <div>
+            <h3>Gilbert Chamber of Commerce</h3>
+            <p>111 N Gilbert Rd</p>
+            <p>Gilbert, AZ 85234</p>
+          </div>
+        </div>
+        <div id="chamberContactInfo">
+          <p>gilbertaz.com</p>
+          <p>(123) 456-7890</p>
+          <p>📍 Location Map</p>
+        </div>
+      </div>
+      <div id="endInfo">
+        <p>
+          ©
+          <span id="copyrightYear"></span>
+          Gilbert Chamber | Tanner Levi | WDD230 Project | Last Modification:
+          <span id="dateModified"></span>
+        </p>
+      </div>
     </footer>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
