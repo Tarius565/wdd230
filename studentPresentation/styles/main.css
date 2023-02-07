@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 12px;
+}
+
+header, footer {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+video {
+    width: 90vw;
+    height: 90vh;
+}
