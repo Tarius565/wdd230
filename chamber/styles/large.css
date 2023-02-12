@@ -134,15 +134,15 @@ body p {
 /* main */
 
 #meeting-banner {
-    background-color: #cbb8a2;
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    font-style: italic;
-    font-family: Merriweather, Spectral, "Times New Roman";
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+  background-color: #cbb8a2;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-family: Merriweather, Spectral, "Times New Roman";
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .main-content {
@@ -155,8 +155,8 @@ body p {
 }
 
 .meeeting-banner {
-    position: absolute;
-    top: 25px;
+  position: absolute;
+  top: 25px;
 }
 
 #hero {
@@ -175,7 +175,8 @@ body p {
 }
 
 #hero-msg h1,
-#hero-msg h4 {
+#hero-msg h4,
+#hero-msg p {
   text-align: center;
   color: #cbb8a2;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
@@ -241,8 +242,8 @@ header label {
 }
 
 #weather {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  grid-column: 1/2;
+  grid-row: 2/3;
   width: 100%;
   margin: 20px auto;
   background: #cbb8a2;
@@ -253,6 +254,19 @@ header label {
   text-align: center;
   box-shadow: 0 0 1em rgb(0, 0, 0, 0.75);
 }
+.weather img {
+  border-radius: 80px;
+}
+.weather-imagery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem .5rem 1rem 0;
+}
+.weather-imagery h3 {
+  margin-left: 1rem;
+}
+
 
 #weather h2 {
   font-size: 24px;
@@ -332,9 +346,9 @@ footer {
 /* utility */
 
 .meet-and-greet {
-    position: absolute;
-    font-size: 3rem;
-    /* padding: 2rem;
+  position: absolute;
+  font-size: 3rem;
+  /* padding: 2rem;
     margin-left: auto;
     background: #cbb8a2;
     border-radius: .5rem;

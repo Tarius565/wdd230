@@ -36,7 +36,10 @@
       <div class="container">
         <div class="nav-wrapper">
           <a id="logo_link" href="index.html">
-            <img src="images/logo.png" alt="Gilbert Chamber of Commerce logo" />
+            <img
+              src="images/logo.webp"
+              alt="Gilbert Chamber of Commerce logo"
+            />
           </a>
           <button class="mobile-nav-toggle">
             <img
@@ -65,11 +68,23 @@
       <section class="main-content">
         <div id="hero">
           <div id="hero-box">
-            <img id="hero-img" src="images/hero-img.png" alt="" />
+            <picture>
+              <source
+                media="(min-width:751px)"
+                srcset="images/wdd230-org-medium.jpg"
+              />
+              <source
+                media="(min-width:950px)"
+                srcset="images/wdd230-org-large.jpg"
+              />
+              <img id="hero-img" src="images/wdd230-org-small.jpg" alt="" />
+            </picture>
+            <!-- <img id="hero-img" src="images/wdd230-org-small.jpg" alt="" /> -->
           </div>
           <section id="hero-msg">
             <h1 class="home-title">The Gilbert Chamber of Commerce</h1>
             <h4>is here to help you grow and strengthen your business.</h4>
+            <p id="hero-img-label"></p>
           </section>
         </div>
         <div id="event">
@@ -81,10 +96,21 @@
         </div>
         <div id="weather">
           <h2>Weather of the Day</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <div class="weather-imagery">
+            <picture class="weather">
+              <source
+                media="(min-width:751px)"
+                srcset="images/sunshine-large.png"
+              />
+              <img src="images/sunshine.png" alt="weather" />
+            </picture>
+            <h3><span id="temp">70</span>°F</h3>
+          </div>
+          <div class="weather-details">
+            <h3 id="weather-descriptor">Sunny</h3>
+            <div class="windspeed"><span id="windspeed">6.5</span> mph</div>
+            <div class="windchill"><span id="windchill">NA</span></div>
+          </div>
         </div>
         <div id="join">
           <h2>Button (Join Us)</h2>
@@ -140,7 +166,7 @@
     <footer>
       <div id="chamberInfo">
         <div id="chamberLocationInfo">
-          <img src="images/logo.png" alt="Gilbert Chamber of Commerce Logo" />
+          <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" />
           <div>
             <h3>Gilbert Chamber of Commerce</h3>
             <p>111 N Gilbert Rd</p>
@@ -163,5 +189,6 @@
       </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
