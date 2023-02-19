@@ -331,6 +331,59 @@ header label {
   box-shadow: 0 0 1em rgb(0, 0, 0, 0.75);
 }
 
+/* Discover Page */
+  
+.info-img {
+  margin: 5px auto;
+  width: 60%;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+.info-img:hover {
+  width: 70%;
+}
+
+.info-img[data-src] {
+  filter: blur(0.5em);
+}
+
+.info-img {
+  filter: blur(0em);
+  transition: filter 0.25s;
+}
+
+.discover .demograph-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0rem 1rem;
+  width: 50%;
+}
+
+.demograph-section {
+  margin: 0rem 12rem;
+  padding: .5rem;
+  background-color: #cbb8a2;
+  border: #000 solid 1px;
+}
+
+.demograph-section .demo-sect-headers {
+  font-family: Merriweather, Spectral, "Times New Roman";
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.demograph-section p {
+  font-family: Rubik, Lato;
+  font-size: 1rem;
+}
+
+.visits {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  font-family: "Lato", Arial, sans-serif;
+}
+
 /* footer */
 footer {
   display: flex;

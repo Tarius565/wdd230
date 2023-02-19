@@ -314,7 +314,39 @@ body p {
 #spotlight3 {
     display: none;
 }
-  
+
+/* Discover Page */
+
+.info-img {
+  margin: 5px auto;
+  width: 50%;
+}
+
+.discover .demograph-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0rem 1rem;
+  width: 50%;
+}
+
+.demograph-section {
+  margin: 0rem 12rem;
+  padding: .5rem;
+  background-color: #cbb8a2;
+  border: #000 solid 1px;
+}
+
+.demograph-section .demo-sect-headers {
+  font-family: Merriweather, Spectral, "Times New Roman";
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.demograph-section p {
+  font-family: Rubik, Lato;
+  font-size: 1rem;
+}
+
 /* footer */
 
 footer {
