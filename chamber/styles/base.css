@@ -340,12 +340,15 @@ body p {
   font-family: Merriweather, Spectral, "Times New Roman";
   font-size: 1.4rem;
   text-align: center;
+  color: #67574f;
 }
 
 .demograph-section p {
   font-family: Rubik, Lato;
   font-size: 1rem;
+  color: #67574f;
 }
+
 
 /* footer */
 
