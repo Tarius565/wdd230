@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+td, th {
+    border: 1px solid rgb(170, 170, 170);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(235, 235, 235);
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td, tr:nth-child(even) th {
+    background-color: rgb(180, 180, 180);
+}
+
+tr:nth-child(odd) td, tr:nth-child(odd) th {
+  background-color: rgb(245,245,245);
+}
+
+#empty, #title {
+    background-color: black;
+    color: white;
+}
+
+td[color_code="check"] {
+    color: rgb(45, 70, 190);
+}
+
+td[color_code="x"] {
+    color: rgb(150, 45, 45);
+}
