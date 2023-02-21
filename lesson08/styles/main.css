@@ -1,13 +1,13 @@
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid black;
     font-size: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1.5px;
 }
 
 td, th {
-    border: 1px solid rgb(170, 170, 170);
+    border: 1px solid black;
     padding: 10px 20px;
 }
 
@@ -27,7 +27,11 @@ tr:nth-child(odd) td, tr:nth-child(odd) th {
   background-color: rgb(245,245,245);
 }
 
-#empty, #title {
+#empty {
+    background-color: black;
+}
+
+#title {
     background-color: black;
     color: white;
 }
