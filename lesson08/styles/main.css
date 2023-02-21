@@ -1,14 +1,22 @@
 table {
+    margin: 4rem auto;
     border-collapse: collapse;
     border: 2px solid black;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 1.5px;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 td, th {
-    border: 1px solid black;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 th {
@@ -16,15 +24,21 @@ th {
 }
 
 td {
+    border: 2px solid black;
     text-align: center;
 }
 
-tr:nth-child(even) td, tr:nth-child(even) th {
-    background-color: rgb(180, 180, 180);
+tr:nth-child(even) td {
+    background-color: rgb(220, 220, 220);
 }
 
-tr:nth-child(odd) td, tr:nth-child(odd) th {
+tbody tr:nth-child(odd) td {
   background-color: rgb(245,245,245);
+}
+
+.header {
+    color: white;
+    background-color: rgb(75, 75, 75);
 }
 
 #empty {
@@ -34,6 +48,7 @@ tr:nth-child(odd) td, tr:nth-child(odd) th {
 #title {
     background-color: black;
     color: white;
+    font-size: 2rem;
 }
 
 td[color_code="check"] {
