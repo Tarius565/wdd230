@@ -319,18 +319,18 @@ body p {
 
 .info-img {
   margin: 5px auto;
-  width: 50%;
+  width: 80%;
 }
 
 .discover .demograph-content {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0rem 1rem;
-  width: 50%;
+  margin: 0rem 0.2rem;
+  width: 80%;
 }
 
 .demograph-section {
-  margin: 0rem 12rem;
+  margin: 0rem 2rem;
   padding: .5rem;
   background-color: #cbb8a2;
   border: #000 solid 1px;
@@ -338,27 +338,67 @@ body p {
 
 .demograph-section .demo-sect-headers {
   font-family: Merriweather, Spectral, "Times New Roman";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #67574f;
 }
 
 .demograph-section p {
   font-family: Rubik, Lato;
-  font-size: 1rem;
+  font-size: .8rem;
   color: #67574f;
 }
 
+.visits {
+  text-align: center;
+}
 
 /* footer */
 
 footer {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
   font-family: Rubik, Lato;
-  font-size: 16px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  font-size: 18px;
+  color: #67574f;
+  padding-bottom: .5rem; 
+  padding-top: .25rem; 
+  margin-top: 4rem; 
+}
+
+#chamberInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1600px;
+}
+
+footer img {
+  margin: 5px auto;
+}
+
+#chamberAddress, #chamberContactInfo {
+  text-align: center;
+  margin: 10px auto;
+}
+
+footer p {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: Rubik, Lato;
+    font-size: 14px;
+    color: #67574f;
+}
+
+#endInfo {
+  margin: 18px auto;
+}
+hr {
+  width: 85%;
+  color: #67574f;
+  opacity: .8;
+  margin: 0 auto;
 }

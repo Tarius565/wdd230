@@ -57,6 +57,7 @@
       </div>
     </header>
 
+    <main>
     <div class="demograph-content">
       <div class="demograph-section">
         <a href="https://datausa.io/profile/geo/gilbert-az/#race_and_ethnicity"
@@ -185,11 +186,13 @@
       </div>
     </div>
     <div class="visits">It's been <span id="visits"></span> days since you last visited the site.</div>
+    </main>
+    
     <footer>
       <div id="chamberInfo">
         <div id="chamberLocationInfo">
           <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" />
-          <div>
+          <div id="chamberAddress">
             <h3>Gilbert Chamber of Commerce</h3>
             <p>111 N Gilbert Rd</p>
             <p>Gilbert, AZ 85234</p>
@@ -201,16 +204,17 @@
           <p>📍 Location Map</p>
         </div>
       </div>
+      <hr>
       <div id="endInfo">
         <p>
-          ©
+          &copy;
           <span id="copyrightYear"></span>
           Gilbert Chamber | Tanner Levi | WDD230 Project | Last Modification:
           <span id="dateModified"></span>
         </p>
       </div>
     </footer>
-    <script src="scripts/apps.js" defer></script>
+    <script src="scripts/app.js" defer></script>
     <script src="scripts/lazyloading.js" defer></script>
     <script src="scripts/visits.js" defer></script>
   </body>

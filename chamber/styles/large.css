@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Rubik&family=Solitreo&family=Spectral&display=swap");
 
 /*67574f-ffffff-a78661-cbb8a2-9c89b8*/
@@ -387,16 +388,59 @@ header label {
 }
 
 /* footer */
+
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 16px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  font-family: Merriweather, Spectral, "Times New Roman";
+  font-size: 24px;
+  color: #67574f;
+  padding-bottom: .5rem; 
+  padding-top: .25rem; 
+  margin-top: 1rem; 
 }
+
+#chamberInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer img {
+  
+  margin: 5px auto;
+}
+
+#chamberLocationInfo {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#chamberContactInfo {
+  grid-column: 2/3;
+}
+
+#chamberAddress, #chamberContactInfo {
+  text-align: left;
+  margin: 30px auto;
+}
+
+footer p {
+    font-family: Rubik, Lato;
+    font-size: 18px;
+    color: #67574f;
+}
+
+hr {
+  width: 85%;
+  color: #67574f;
+  opacity: .8;
+  margin: 0 auto;
+}
+
+#endInfo {
+  margin: 18px auto;
+  padding: 14px;
+}
+
 
 /* utility */
 
