@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 750px)"
+      href="styles/base.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 751px) and (max-width: 949px)"
+      href="styles/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 950px)"
+      href="styles/large.css"
+    />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a id="logo_link" href="index.html">
+            <img
+              src="images/logo.webp"
+              alt="Gilbert Chamber of Commerce logo"
+            />
+          </a>
+          <button class="mobile-nav-toggle">
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+            <img class="icon-close" src="images/icon-close.svg" alt="" />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="join.html">Join Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <h1 class="joinFormHeader">Gilbert Chamber of Commerce Membership Application</h1>
+        <form class="joinForm" action="thankyou.html" method="get">
+            <fieldset>
+            <fieldset>
+                <legend>Application Information</legend>
+                <label class="top">First Name* <input type="text" name="firstName" required></label>
+                <label class="top">Last Name* <input type="text" name="lastName" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Name* <input type="text" name="businessName" required></label>
+                <label class="top">Business Position Title <input type="text" name="businessPos" pattern="^(?=.*[a-zA-Z\s\-]){7,}$"></label>
+                <label class="top">Business Description</label>
+                <textarea name="businessDesc" class="businessDesc" rows="4" cols="60"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup" class="memberTableTitle">Select Membership Level</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Cost (Annually)</th>
+                            <th scope="col">Trainings</th>
+                            <th scope="col">Advertisments</th>
+                            <th scope="col">Event Discounts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="sbs"><input type="radio" name="membership" value="NP"> Non Profit Membership</label>
+                            </td>
+                            <td>Free</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="x">✘</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                            </td>
+                            <td>$89.99 (or $7.99/Month)</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="x">✘</td>
+                            <td color_code="x">✘</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                            </td>
+                            <td>$139.99 (or $12.99/Month)</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="x">✘</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                            </td>
+                            <td>$159.99 (or $14.99/Month)</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="check">🗸</td>
+                            <td color_code="check">🗸</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </fieldset>
+            <input type="submit" value="Join the Community" class="submitBtn">
+        </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+      <div id="chamberInfo">
+        <div id="chamberLocationInfo">
+          <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" />
+          <div id="chamberAddress">
+            <h3>Gilbert Chamber of Commerce</h3>
+            <p>111 N Gilbert Rd</p>
+            <p>Gilbert, AZ 85234</p>
+          </div>
+        </div>
+        <div id="chamberContactInfo">
+          <p>gilbertaz.com</p>
+          <p>(123) 456-7890</p>
+          <p>📍 Location Map</p>
+        </div>
+      </div>
+      <hr>
+      <div id="endInfo">
+        <p>
+          &copy;
+          <span id="copyrightYear"></span>
+          Gilbert Chamber | Tanner Levi | WDD230 Project | Last Modification:
+          <span id="dateModified"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/lazyloading.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+  </body>
+</html>

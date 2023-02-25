@@ -353,7 +353,143 @@ body p {
   text-align: center;
 }
 
+
+/*  Join Page   */
+
+
+.joinFormHeader {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+form {
+  margin: .5rem .5rem;
+}
+
+form fieldset {
+  margin: 1rem 0;
+  border: 1px solid #a78661;
+  border-radius: 4px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: #67574f;
+  font-family: Merriweather, Spectral, "Times New Roman";
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  color: #67574f;
+  font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #a78661;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #67574f;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.businessDesc {
+  border: solid 1px #a78661;
+  border-radius: 4px;
+  padding: .25rem;
+  font-size: 1.2rem;
+  font-family: Rubik, Lato;
+  color: #67574f;
+  max-width: 20rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #67574f;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #67574f;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 60%;
+  max-width: 20rem;
+  font-size: 1.4rem;
+  font-family: Merriweather, Spectral, "Times New Roman";
+}
+
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/* Membership Table */
+
+table {
+  max-width: 100%;
+  margin: .5rem auto;
+  border-collapse: collapse;
+  border: 1px solid #67574f;
+  border-color: black;
+  text-align: center;
+  font-family: Rubik, Lato;
+}
+
+td, th {
+  padding: 5px 5px;
+  border: 1px solid black;
+}
+
+
+tbody tr:nth-child(even) td {
+  background-color: #cbb8a2;
+}
+
+tbody tr:nth-child(odd) td {
+background-color: #fff;
+}
+
+thead {
+  color: white;
+  background-color: #67574f;
+}
+
+thead .memberTableTitle {
+  font-size: 1.4rem;
+}
+
+td[color_code="check"] {
+  color: rgb(0, 170, 40);
+  font-size: 1.4rem;
+}
+
+td[color_code="x"] {
+  color: rgb(150, 45, 45);
+}
+
+/* Thank you page */
+
+.thankYou h1, .thankYou p {
+  margin: 10px auto;
+}
+
+
 /* footer */
+
 
 footer {
   display: grid;
