@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato&family=Satisfy&display=swap');
+
+/* https://coolors.co/000000-cbe5c7-4e6e58 */
+
+header {
+    font-size: 2rem;
+    background-color: white;
+    text-align: center;
+    border: gray solid 1px;
+}
+
+header, h2 {
+    font-family: Caveat, Satisfy, monospace;
+    color: #4e6e58;
+}
+
+main {
+    border: gray solid 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    margin: 5px 10px;
+    background-color: lightgray;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section {
+    border: #4e6e58 solid 1px;
+    background-color: #cbe5c7;
+    margin: 5px 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+}
+
+section p {
+    font-family: Lato, Times, serif;
+}
+
+section img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+/*  Medium  */
+
+@media only screen and (max-width: 950px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
