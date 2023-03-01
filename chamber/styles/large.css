@@ -35,7 +35,6 @@ body {
 
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
@@ -148,7 +147,7 @@ body p {
 
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   margin-top: 25px;
   margin-left: 75px;
   margin-right: 75px;
@@ -182,6 +181,10 @@ body p {
   color: #cbb8a2;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
+}
+
+#hero-msg h4 {
+  font-size: 1.4rem;
 }
 
 #hero-msg {
@@ -333,6 +336,11 @@ header label {
 }
 
 /* Discover Page */
+
+.discover-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
   
 .info-img {
   margin: 5px auto;
@@ -344,13 +352,52 @@ header label {
   width: 70%;
 }
 
-.info-img[data-src] {
+.feat-img {
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.feat-img:hover {
+  width: 100%;
+}
+
+.info-img[data-src], .feat-img[data-src] {
   filter: blur(0.5em);
 }
 
-.info-img {
+.info-img, .feat-img {
   filter: blur(0em);
   transition: filter 0.25s;
+}
+
+.sidebar {
+  margin-left: 2rem;
+  margin-right: -1rem;
+  background-color: #cbb8a2;
+  padding: 20px;
+  border: black solid 1px;
+  text-align: center;
+}
+
+.sidebar h2 {
+  font-family: Merriweather, Spectral, "Times New Roman";
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.sidebar h3 {
+  margin-top: 5px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: .8rem;
+}
+
+.features {
+  background-color: #a78661;
+  padding: 5px 10px;
+  border: black solid 1px;
+  margin-bottom: .4rem;
 }
 
 .discover .demograph-content {
@@ -361,7 +408,7 @@ header label {
 }
 
 .demograph-section {
-  margin: 0rem 12rem;
+  margin: 0rem 2rem;
   padding: .5rem;
   background-color: #cbb8a2;
   border: #000 solid 1px;
@@ -424,23 +471,24 @@ footer img {
 }
 
 footer p {
-    font-family: Rubik, Lato;
-    font-size: 18px;
-    color: #67574f;
-}
-
-hr {
-  width: 85%;
+  font-family: Rubik, Lato;
+  font-size: 14px;
   color: #67574f;
-  opacity: .8;
-  margin: 0 auto;
 }
 
 #endInfo {
-  margin: 18px auto;
-  padding: 14px;
+margin: 10px 5%;
 }
 
+#endInfo p {
+margin-top: 8px;
+}
+hr {
+width: 100%;
+color: #67574f;
+opacity: .8;
+margin: 0 auto;
+}
 
 /*  Join Page   */
 

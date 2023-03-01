@@ -34,7 +34,6 @@ body {
 
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
@@ -132,6 +131,10 @@ body p {
     gap: 1.5rem;
     text-align: center;
     font-weight: bold;
+  }
+
+  .socialLinks {
+    margin: 0 auto;
   }
 
   .nav-list a {
@@ -317,9 +320,42 @@ body p {
 
 /* Discover Page */
 
+.discover-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-img {
   margin: 5px auto;
   width: 80%;
+}
+
+.sidebar {
+  margin: 0 1.2rem;
+  background-color: #cbb8a2;
+  padding: 20px;
+  border: black solid 1px;
+  text-align: center;
+}
+
+.sidebar h2 {
+  font-family: Merriweather, Spectral, "Times New Roman";
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.sidebar h3 {
+  margin-top: 5px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.features {
+  background-color: #a78661;
+  padding: 5px 10px;
+  border: black solid 1px;
+  margin-bottom: .4rem;
 }
 
 .discover .demograph-content {
@@ -330,7 +366,7 @@ body p {
 }
 
 .demograph-section {
-  margin: 0rem 2rem;
+  margin: .6rem 1.2rem;
   padding: .5rem;
   background-color: #cbb8a2;
   border: #000 solid 1px;
@@ -522,18 +558,21 @@ footer img {
 
 footer p {
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
     font-family: Rubik, Lato;
     font-size: 14px;
     color: #67574f;
 }
 
 #endInfo {
-  margin: 18px auto;
+  margin: 10px 5%;
+}
+
+#endInfo p {
+  margin-top: 8px;
+  text-align: left;
 }
 hr {
-  width: 85%;
+  width: 100%;
   color: #67574f;
   opacity: .8;
   margin: 0 auto;
