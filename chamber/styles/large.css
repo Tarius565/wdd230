@@ -434,62 +434,6 @@ header label {
   font-family: "Lato", Arial, sans-serif;
 }
 
-/* footer */
-
-footer {
-  font-family: Merriweather, Spectral, "Times New Roman";
-  font-size: 24px;
-  color: #67574f;
-  padding-bottom: .5rem; 
-  padding-top: .25rem; 
-  margin-top: 1rem; 
-}
-
-#chamberInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-footer img {
-  
-  margin: 5px auto;
-}
-
-#chamberLocationInfo {
-  grid-column: 1/2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#chamberContactInfo {
-  grid-column: 2/3;
-}
-
-#chamberAddress, #chamberContactInfo {
-  text-align: left;
-  margin: 30px auto;
-}
-
-footer p {
-  font-family: Rubik, Lato;
-  font-size: 14px;
-  color: #67574f;
-}
-
-#endInfo {
-margin: 10px 5%;
-}
-
-#endInfo p {
-margin-top: 8px;
-}
-hr {
-width: 100%;
-color: #67574f;
-opacity: .8;
-margin: 0 auto;
-}
-
 /*  Join Page   */
 
 
@@ -622,6 +566,109 @@ td[color_code="x"] {
 .thankYou h1, .thankYou p {
   margin: 10px auto;
 }
+
+
+/*  Directory   */
+
+.directory-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+section {
+  border: #67574f solid 1px;
+  background-color: #cbb8a2;
+  margin: 5px 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #000;
+  font-family: Merriweather, Spectral, "Times New Roman";
+}
+
+section p, section a {
+  font-size: 1.2rem;
+  font-family: Rubik, Lato;
+  margin: 0 2%;
+  color: #67574f;
+}
+
+section img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 30%;
+  height: auto;
+  margin: 5px auto 10px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+section:hover {
+  background-color: #a78661;
+}
+
+section img:hover {
+  width: 35%;
+}
+
+/* footer */
+
+footer {
+  font-family: Merriweather, Spectral, "Times New Roman";
+  font-size: 24px;
+  color: #67574f;
+  padding-bottom: .5rem; 
+  padding-top: .25rem; 
+  margin-top: 1rem; 
+}
+
+#chamberInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer img {
+  
+  margin: 5px auto;
+}
+
+#chamberLocationInfo {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#chamberContactInfo {
+  grid-column: 2/3;
+}
+
+#chamberAddress, #chamberContactInfo {
+  text-align: left;
+  margin: 30px auto;
+}
+
+footer p {
+  font-family: Rubik, Lato;
+  font-size: 14px;
+  color: #67574f;
+}
+
+#endInfo {
+margin: 10px 5%;
+}
+
+#endInfo p {
+margin-top: 8px;
+}
+hr {
+width: 100%;
+color: #67574f;
+opacity: .8;
+margin: 0 auto;
+}
+
 
 
 /* utility */

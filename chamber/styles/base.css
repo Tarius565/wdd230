@@ -524,6 +524,42 @@ td[color_code="x"] {
 }
 
 
+/*  Directory   */
+
+.directory-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+section {
+  border: #67574f solid 1px;
+  background-color: #cbb8a2;
+  margin: 5px 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #000;
+  font-family: Merriweather, Spectral, "Times New Roman";
+}
+
+section p, section a {
+  font-size: 1.2rem;
+  font-family: Rubik, Lato;
+  margin: 0 2%;
+}
+
+section img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 30%;
+  height: auto;
+  margin: 5px auto 10px;
+}
+
+
+
 /* footer */
 
 
