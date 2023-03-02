@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Waggintails Dogwash",
+        "address": "2531 S. Gilbert Rd. Ste. 107, Gilbert, AZ 85295",
+        "number": "(602) 755-1707",
+        "website": "https://waggintailsdogwash.com",
+        "logo": "https://waggintailsdogwash.com/files/2022/04/waggin-tails-logo.png"
+    },
+    {
+        "name": "Gilbert Arts Academy",
+        "address": "862 E. Elliot Rd. Gilbert AZ 85234",
+        "number": "(480) 325-6100",
+        "website": "https://www.gilbertartsacademy.com",
+        "logo": "https://www.gilbertartsacademy.com/pics/header_logo.png"
+    },
+    {
+        "name": "V's Barbershop",
+        "address": "1464 E. Williams Field Rd., Ste. 107 Gilbert AZ 85295",
+        "number": "(480) 404-6933",
+        "website": "https://vbarbershop.com",
+        "logo": "https://vbarbershop.com/wp-content/uploads/2020/01/VsRound.png"
+    },
+    {
+        "name": "Curves",
+        "address": "538 S. Gilbert Rd., Ste. 107 Gilbert AZ 85296",
+        "number": "(480) 558-1070",
+        "website": "https://www.wellnessliving.com/fitness/gilbert/gilbertaz-west-6oqnvm/review/?id_mode=12",
+        "logo": "https://www.wellnessliving.com/_next/image/?url=https%3A%2F%2Fd12lnanyhdwsnh.cloudfront.net%2F6%2FwIU.png&w=2048&q=75"
+    },
+    {
+        "name": "Walt's Jewelers",
+        "address": "143 E. Germann Rd., Ste. 111 Gilbert AZ 85297",
+        "number": "(480) 899-9199",
+        "website": "https://waltsjewelers.com",
+        "logo": ""
+    },
+    {
+        "name": "Fat Cats Entertainment Center",
+        "address": "4321 E. Baseline Rd. Gilbert AZ 85234",
+        "number": "(480) 498-3325",
+        "website": "https://www.fatcatsfun.com",
+        "logo": "https://www.fatcatsfun.com/media/osrdlaw5/new-header-logo_24th-august-2022.svg"
+    },
+    {
+        "name": "Northwestern Mutual",
+        "address": "111 E. Rivulon Blvd., Ste. 101 Gilbert AZ 85297",
+        "number": "(480) 722-7700",
+        "website": "https://www.northwesternmutual.com/office/az/gilbert/87689457/",
+        "logo": "https://media.northwesternmutual.com/sites/images/static/footer/nm-logo-blue.svg"
+    },
+    {
+        "name": "Hyatt Place Phoenix - Gilbert",
+        "address": "3275 S. Market St. Gilbert AZ 85297",
+        "number": "(480) 899-5900",
+        "website": "https://www.hyatt.com",
+        "logo": "https://chambermaster.blob.core.windows.net/images/members/1886/11748/MemLogo_Hyatt%20Place_080921-065740.jpg"
+    },
+    {
+        "name": "Dog Haus Biergarten",
+        "address": "2224 E. Williams Field Rd., Ste. 107 Gilbert AZ 85295",
+        "number": "(602) 584-7156",
+        "website": "https://doghaus.com/location/santan-village-biergarten/",
+        "logo": "https://doghaus.com/wp-content/uploads/2022/10/dhlogo2.svg"
+    }
+]
