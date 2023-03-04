@@ -526,12 +526,23 @@ td[color_code="x"] {
 
 /*  Directory   */
 
-.directory-cards {
+.directory .menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.directory .menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.directory-cards .directory-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-section {
+.directory .directory-cards-grid section {
   border: #67574f solid 1px;
   background-color: #cbb8a2;
   margin: 5px 15px;
@@ -539,23 +550,64 @@ section {
   text-align: center;
 }
 
-section h2 {
+.directory .directory-cards-grid section h2 {
   font-size: 1.4rem;
   color: #000;
   font-family: Merriweather, Spectral, "Times New Roman";
 }
 
-section p, section a {
+.directory .directory-cards-grid section p, .directory .directory-cards-grid section a {
   font-size: 1.2rem;
   font-family: Rubik, Lato;
   margin: 0 2%;
 }
 
-section img {
+.directory .directory-cards-grid section img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   width: 30%;
   height: auto;
   margin: 5px auto 10px;
+}
+
+
+.directory .directory-cards-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+  border: solid #67574f 1px;
+}
+
+.directory .directory-cards-list section {
+  /* display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr 1fr 1fr; */
+  margin: 0;
+  padding: .25rem;
+  text-align: left;
+}
+
+.directory .directory-cards-list section > * {
+  margin: 0 1rem;
+}
+
+.directory .directory-cards-list section img {
+  display: none;
+}
+
+.directory .directory-cards-list section:nth-child(odd) {
+  background-color: #cbb8a2;
+}
+
+.directory .directory-cards-list section h2 {
+  font-size: 1rem;
+  margin-left: 0;
+  color: #000;
+  font-family: Merriweather, Spectral, "Times New Roman";
+}
+
+.directory .directory-cards-list section p, .directory .directory-cards-list section a {
+  font-size: 0.8rem;
+  font-family: Rubik, Lato;
+  color: #67574f;
 }
 
 

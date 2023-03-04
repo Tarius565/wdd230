@@ -1,17 +1,14 @@
 const url = 'https://tarius565.github.io/wdd230/chamber/data.json';
 
-
 async function getBusinessData(url) {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.businesses);
     displayBusinesses(data.businesses);
-
 }
 
-
 const displayBusinesses = (businesses) => {
-    const cards = document.querySelector('div.directory-cards');
+    const cards = document.querySelector('div.directory-cards-grid');
 
     businesses.forEach((business) => {
         let card = document.createElement('section');
@@ -46,5 +43,22 @@ const displayBusinesses = (businesses) => {
     });
 }
 
-
 getBusinessData(url);
+
+
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".directory-cards-grid");
+
+gridbutton.addEventListener("click", () => {
+
+	display.classList.add("directory-cards-grid");
+	display.classList.remove("directory-cards-list");
+});
+
+listbutton.addEventListener("click", () => {
+
+	display.classList.add("directory-cards-list");
+	display.classList.remove("directory-cards-grid");
+});
