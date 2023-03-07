@@ -1,0 +1,16 @@
+body {
+    margin: .4rem 1rem;
+}
+
+body h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.4rem;
+    color: #406ea2;
+    box-shadow: lightgray 0px 2px;
+    text-shadow: 0 0 10px #73e4e8, 0 0 20px #73e4e8, 0 0 40px #73e4e8;
+    letter-spacing: 3px;
+}
+
+body p {
+    font-size: 1.4rem;
+}
