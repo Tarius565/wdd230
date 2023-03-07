@@ -277,6 +277,10 @@ body p {
 }
 
 
+#weather-descriptor::first-letter {
+  text-transform: capitalize;
+}
+
 #weather h2 {
   font-size: 24px;
 }

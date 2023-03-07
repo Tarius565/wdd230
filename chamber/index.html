@@ -101,17 +101,13 @@
           <h2>Weather of the Day</h2>
           <div class="weather-imagery">
             <picture class="weather">
-              <source
-                media="(min-width:751px)"
-                srcset="images/sunshine-large.png"
-              />
-              <img src="images/sunshine.png" alt="weather" />
+              <img src="" alt="weather" id="weather-icon"/>
             </picture>
             <h3><span id="temp">70</span>°F</h3>
           </div>
           <div class="weather-details">
             <h3 id="weather-descriptor">Sunny</h3>
-            <div class="windspeed"><span id="windspeed">6.5</span> mph</div>
+            <div class="windspeed"><span id="windspeed"></span> mph</div>
             <div class="windchill"><span id="windchill">NA</span></div>
           </div>
         </div>
@@ -187,6 +183,7 @@
       </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/weather-api.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/resize.js"></script>
   </body>
