@@ -321,11 +321,16 @@ header label {
 }
 
 .container-spotlight h2 {
-  font-size: 24px;
+  font-size: 1.4rem;
 }
 
 .container-spotlight p {
-  font-size: 18px;
+  font-size: 1rem;
+}
+
+.container-spotlight img {
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .spotlight {
@@ -510,6 +515,11 @@ form input.submitBtn {
   max-width: 20rem;
   font-size: 1.6rem;
   font-family: Merriweather, Spectral, "Times New Roman";
+  cursor: pointer;
+}
+
+form input.submitBtn:hover {
+  background-color: #a78661;
 }
 
 
@@ -663,6 +673,48 @@ td[color_code="x"] {
   font-size: 1rem;
   font-family: Rubik, Lato;
   color: #67574f;
+}
+
+/* Contact Us */
+main .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-us-form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-left: 2rem;
+}
+
+.contact-us-form legend {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-us {
+  margin: 15px 10px;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding: 15% 15%;
+}
+
+.contact-us h1 {
+  font-size: 2rem;
+}
+
+.contact-us h3 {
+  font-size: 1.8rem;
+  color: #67574f;
+}
+
+.contact-us p {
+  font-size: 1.5rem;
+}
+
+.contact-us #contactPhone {
+  margin-top: 35px;
 }
 
 

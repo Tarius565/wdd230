@@ -300,11 +300,16 @@ body p {
 }
 
 .container-spotlight h2 {
-    font-size: 24px;
+  font-size: 1.4rem;
 }
-  
+
 .container-spotlight p {
-    font-size: 18px;
+  font-size: 1rem;
+}
+
+.container-spotlight img {
+  max-width: 30%;
+  margin: 0 auto;
 }
 
 .spotlight {
@@ -487,10 +492,11 @@ table {
   border-color: black;
   text-align: center;
   font-family: Rubik, Lato;
+  font-size: 0.8rem;
 }
 
 td, th {
-  padding: 5px 5px;
+  padding: 2px 2px;
   border: 1px solid black;
 }
 
@@ -506,19 +512,21 @@ background-color: #fff;
 thead {
   color: white;
   background-color: #67574f;
+  font-size: 0.8rem;
 }
 
 thead .memberTableTitle {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 td[color_code="check"] {
   color: rgb(0, 170, 40);
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 td[color_code="x"] {
   color: rgb(150, 45, 45);
+  font-size: 0.6rem;
 }
 
 /* Thank you page */
@@ -613,6 +621,44 @@ td[color_code="x"] {
   font-family: Rubik, Lato;
   color: #67574f;
 }
+
+
+/* Contact Us */
+
+.contact-us-form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  margin: 1rem 2rem;
+
+}
+
+.contact-us-form legend {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.contact-us {
+  margin: 5px 10px;
+  padding: 5% 15%;
+}
+
+.contact-us h1 {
+  font-size: 1.4rem;
+}
+
+.contact-us h3 {
+  font-size: 1.2rem;
+  color: #67574f;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+}
+
+.contact-us #contactPhone {
+  margin-top: 35px;
+}
+
+
 
 
 

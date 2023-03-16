@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 750px)"
+      href="styles/base.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 751px) and (max-width: 949px)"
+      href="styles/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 950px)"
+      href="styles/large.css"
+    />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a id="logo_link" href="index.html">
+            <img
+              src="images/logo.webp"
+              alt="Gilbert Chamber of Commerce logo"
+            />
+          </a>
+          <button class="mobile-nav-toggle">
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+            <img class="icon-close" src="images/icon-close.svg" alt=""/>
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="join.html">Join Us</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-facebook.png"
+                    alt="facebook-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-instagram.png"
+                    alt="instagram-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="contact-us">
+          <h1>Contact Us</h1>
+          <h3>Gilbert Chamber of Commerce</h3>
+          <p>111 N Gilbert Rd</p>
+          <p>Gilbert, AZ 85234</p>
+          <p id="contactPhone">(123) 456-7890</p>
+        </div>
+
+        <form class="contact-us-form" action="thankyou.html" method="get">
+          <fieldset>
+            <legend>Get in Touch</legend>
+            <fieldset>
+              <label class="top"
+                >First Name* <input type="text" name="firstName" required
+              /></label>
+              <label class="top"
+                >Last Name* <input type="text" name="lastName" required
+              /></label>
+              <label class="top"
+                >Email*
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="someone@gmail.com"
+                  required
+              /></label>
+              <label class="top"
+                >Business Name* <input type="text" name="businessName" required
+              /></label>
+              <div class="chamberMember">
+                <label class="top">Are you a Chamber Member?*</label>
+                <label class="sbs"
+                  ><input type="radio" name="chamberMember" value="Yes"/>
+                  Yes</label
+                >
+                <label class="sbs"
+                  ><input type="radio" name="chamberMember" value="No"/>
+                  No</label
+                >
+                <label class="sbs"
+                  ><input type="radio" name="chamberMember" value="Unsure"/>
+                  Not sure</label
+                >
+              </div>
+              <label class="top"
+                >What questions do you have for the Chamber?</label
+              >
+              <textarea
+                name="businessDesc"
+                class="businessDesc"
+                rows="4"
+                cols="35"
+              ></textarea>
+            </fieldset>
+
+            <input type="submit" value="Contact Us" class="submitBtn"/>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div id="chamberInfo">
+        <div id="chamberLocationInfo">
+          <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo"/>
+          <div id="chamberAddress">
+            <h3>Gilbert Chamber of Commerce</h3>
+            <p>111 N Gilbert Rd</p>
+            <p>Gilbert, AZ 85234</p>
+          </div>
+        </div>
+        <div id="chamberContactInfo">
+          <p>gilbertaz.com</p>
+          <p>(123) 456-7890</p>
+          <p>📍 Location Map</p>
+        </div>
+      </div>
+      <div id="endInfo">
+        <hr />
+        <p>
+          &copy;
+          <span id="copyrightYear"></span>
+          Gilbert Chamber | Tanner Levi | WDD230 Project | Last Modification:
+          <span id="dateModified"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/lazyloading.js" defer></script>
+  </body>
+</html>
