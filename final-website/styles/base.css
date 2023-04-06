@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Caveat:wght@500&family=Delicious+Handrawn&family=Lato&family=Roboto&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 6c3e1c-cc0000-#cc0000-cbc7b9-213129 */
+/* brown -red   -green -gray  -dark green */
+main {
+  background-color: #cbc7b9;
+  padding: 15px 0;
+}
+
+body h1 {
+  font-size: 32px;
+  font-family: "Delicious Handrawn", Caveat, "Times New Roman";
+  color: #cc0000;
+}
+
+body h2 {
+    font-size: 28px;
+    font-family: "Delicious Handrawn", Caveat, "Times New Roman";
+    color: #cc0000;
+}
+
+body p {
+  font-size: 26px;
+  font-family: Roboto, Lato;
+  color: #213129;
+}
+
+/* navigation */
+
+#logo_link {
+    width: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.primary-header {
+  padding-top: .5em;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+
+    position: absolute;
+    padding: 2rem;
+    inset: 8rem 3rem auto;
+    /* max-width: 25rem; */
+    margin-left: auto;
+    background-color: #cbc7b9;
+    border-radius: .5rem;
+    box-shadow: 0 0 0.75em rgb(0,0,0, 0.5);
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .socialLinks {
+    margin: 0 auto;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: #cc0000;
+  }
+
+  .primary-navigation[data-visible] {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+}
+
+/* index */
+
+#hero {
+  box-shadow: 0 0 1em rgb(0,0,0, 0.75);
+  width: 90%;
+  margin: 10px auto;
+}
+
+#hero-msg h1 {
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+#hero-msg p {
+  font-size: 18px;
+}
+
+#hero-msg {
+  margin-top: 5%;
+  padding-top: 4%;
+  text-align: center;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+.fresh input.submitBtn {
+  border: none;
+  background-color: #cc0000;
+  color: white;
+  border-radius: 1rem;
+  padding: .5rem 1.25rem;
+  margin: 0 0 2rem 2%;
+  width: 60%;
+  max-width: 20rem;
+  font-size: 1.2rem;
+  font-family: "Delicious Handrawn", Caveat, "Times New Roman";
+}
+
+.fresh {
+  margin-top: 5%;
+  padding-top: 4%;
+  text-align: center;
+  box-shadow: 0 0 1em rgb(0,0,0, 0.75);
+  width: 90%;
+  margin: 10px auto;
+}
+
+.fresh p {
+  font-size: 18px;
+}
+
+.coastInfo {
+  text-align: center;
+  box-shadow: 0 0 1em rgb(0,0,0, 0.75);
+  width: 90%;
+  margin: 10px auto;
+}
+
+.coastInfo p {
+  font-size: 18px;
+}
+
+#weather {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  background: #cbc7b9;
+  color: #cc0000;
+  font-family: Roboto, Lato;
+  text-align: center;
+  box-shadow: 0 0 1em rgb(0,0,0, 0.75);
+}
+
+.weather img {
+  border-radius: 80px;
+}
+
+.weather-imagery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem .5rem;
+}
+
+.weather-imagery h3 {
+  margin-left: 1rem;
+}
+
+#weather-descriptor::first-letter {
+  text-transform: capitalize;
+}
+
+#weather h2 {
+  font-size: 24px;
+}
+
+#weather p {
+  font-size: 18px;
+}
+
+
+/*  Fresh Page   */
+
+form {
+  margin: .5rem .5rem;
+}
+
+form fieldset {
+  margin: 1rem 0;
+  border: 1px solid #213129;
+  border-radius: 4px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: #cc0000;
+  font-family: "Delicious Handrawn", Caveat, "Times New Roman";
+  font-size: 26px;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  color: #cc0000;
+  font-size: 1rem;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #213129;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #cc0000;
+  width: 100%;
+  max-width: 20rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #cc0000;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #cc0000;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 60%;
+  max-width: 20rem;
+  font-size: 2rem;
+  font-family: "Delicious Handrawn", Caveat, "Times New Roman";
+}
+
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/* Contact Us */
+
+.contact-us-form {
+  margin: 1rem 2rem;
+
+}
+
+.contact-us-form legend {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.contact-us {
+  margin: 5px 10px;
+}
+
+.contact-us h1 {
+  font-size: 1.4rem;
+}
+
+.contact-us h3 {
+  font-size: 1.2rem;
+  color: #cc0000;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+}
+
+.visit-us, .about-us, .mission {
+  margin-top: 5%;
+  padding: 4%;
+  text-align: center;
+  box-shadow: 0 0 1em rgb(0,0,0, 0.75);
+  width: 90%;
+  margin: 10px auto;
+}
+
+/* footer */
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Roboto, Lato;
+  font-size: 18px;
+  color: #cc0000;
+  padding-bottom: .5rem; 
+  padding-top: .25rem; 
+  margin-top: 2rem; 
+}
+
+#companyInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1600px;
+}
+
+footer img {
+  margin: 5px auto;
+  width: 120px;
+}
+
+#companyAddress, #companyContactInfo {
+  text-align: center;
+  margin: 10px auto;
+}
+
+footer p {
+    text-align: center;
+    font-family: Roboto, Lato;
+    font-size: 14px;
+    color: #cc0000;
+}
+
+#endInfo {
+  margin: 10px 5%;
+}
+
+#endInfo p {
+  margin-top: 8px;
+  text-align: left;
+}
+hr {
+  width: 100%;
+  color: #cc0000;
+  opacity: .8;
+  margin: 0 auto;
+}

@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bountiful Foods</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 750px)"
+      href="styles/base.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 751px) and (max-width: 949px)"
+      href="styles/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 950px)"
+      href="styles/large.css"
+    />
+  </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
           <a id="logo_link" href="index.html">
-            <img
-              src="images/logo.webp"
-              alt="Bountiful Foods logo"
-            />
+            <img src="images/logo.webp" alt="Bountiful Foods logo" />
           </a>
           <button class="mobile-nav-toggle">
             <img
@@ -27,117 +43,157 @@
           </button>
           <nav class="primary-navigation">
             <ul role="list" class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="fresh.html">Fresh</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li class="socialLinks">
-            <a href="#"
-              ><img
-                src="images/icon-facebook.png"
-                alt="facebook-logo"
-                style="width: 2rem"
-            /></a>
-          </li>
-          <li class="socialLinks">
-            <a href="#"
-              ><img
-                src="images/icon-twitter.png"
-                alt="twitter-logo"
-                style="width: 2rem"
-            /></a>
-          </li>
-          <li class="socialLinks">
-            <a href="#"
-              ><img
-                src="images/icon-instagram.png"
-                alt="instagram-logo"
-                style="width: 2rem"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-    
-    <main>
-      <h1>Welcome to Bountiful Foods!</h1>
-      <p>Where We Offer Organic Locally Grown Foods!</p>
-      
-      <section>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="fresh.html">Fresh</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-facebook.png"
+                    alt="facebook-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-twitter.png"
+                    alt="twitter-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-instagram.png"
+                    alt="instagram-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="hero">
+        <div id="hero-msg">
+        <h1>Welcome to Bountiful Foods!</h1>
+        <p>Where We Offer Organic Locally Grown Foods!</p>
+        </div>
+        <div id="heroImg">
+        <picture>
+          <source
+            media="(min-width: 751px)"
+            srcset="images/hero-img.jpg"
+          />
+          <img
+            class="hero-img"
+            src="images/hero-img-blur.jpg"
+            data-src="images/hero-img-min.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      </section>
+      <section class="fresh">
         <h2>Make Your Own Fruit Drink Mix!</h2>
-        <p>Try our fresh and organic fruits and make your own fruit drink mix. <a href="fresh.html">Learn More</a></p>
-
-
-
+        <p>
+          Try our fresh and organic fruits and make your own fruit drink mix.
+        </p>
+        <picture>
+          <source
+            media="(min-width: 751px)"
+            srcset="images/fresh-img.jpg"
+          />
+          <img
+            class="fresh-img"
+            src="images/fresh-img-blur.jpg"
+            data-src="images/fresh-img-min.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </picture>
+        <input type="submit" value="Mix the Drink!" class="submitBtn">
+        <p>You have submitted <span id="drinkNum">0</span> specialty drinks so far!</p>
       </section>
 
-      <section>
-        <h2>Information Card</h2>
-        <p>You have submitted <span>X</span> specialty drinks so far!</p>
-      </section>
-      
-      <section>
+      <section class="coastInfo">
         <h2>About Our Coastal Area in Southern California</h2>
-        <p>We are located in the beautiful coastal area of Southern California. Our community is known for its stunning beaches, diverse cultures, and outdoor activities. Come visit us and enjoy the sunshine!</p>
+        <p>
+          We are located in the beautiful coastal area of Southern California.
+          Our community is known for its stunning beaches, diverse cultures, and
+          outdoor activities. Come visit us and enjoy the sunshine!
+        </p>
+        <picture>
+          <source
+            media="(min-width: 751px)"
+            srcset="images/beach-img.jpg"
+          />
+          <img
+            class="beach-img"
+            src="images/beach-img-blur.jpg"
+            data-src="images/beach-img-min.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </picture>
       </section>
-      
-      <section>
+
+      <section id="weather">
+        <div class="weather-title">
         <h2>Weather Information</h2>
         <p>Check out the current weather in our area:</p>
-        <div class="weather-imagery-1">
-        <picture class="weather">
-            <img src="#" alt="weather" id="weather-icon" />
-        </picture>
-        <h3><span id="temp">70</span>°F</h3>
+      </div>
+        <div class="weather-imagery" id="weather1">
+          <picture class="weather-pic">
+            <img src="#" alt="weather" id="weather-icon1" />
+          </picture>
+          <h3><span id="temp1">70</span>°F</h3>
+          <h3><span id="humid1"></span>%</h3>
         </div>
         <div class="weather-details">
-        <h3 id="weather-descriptor">Sunny</h3>
-        <div class="windspeed"><span id="windspeed"></span> mph</div>
-        <div class="windchill"><span id="windchill">NA</span></div>
+          <h3 id="weather-descriptor1">Sunny</h3>
         </div>
-        <div class="weather-imagery-2">
-        <picture class="weather">
-            <img src="#" alt="weather" id="weather-icon" />
-        </picture>
-        <h3><span id="temp">70</span>°F</h3>
-        </div>
-        <div class="weather-details">
-        <h3 id="weather-descriptor">Sunny</h3>
-        <div class="windspeed"><span id="windspeed"></span> mph</div>
-        <div class="windchill"><span id="windchill">NA</span></div>
-        </div>
-        <div class="weather-imagery-3">
-        <picture class="weather">
-            <img src="#" alt="weather" id="weather-icon" />
-        </picture>
-        <h3><span id="temp">70</span>°F</h3>
+        <div class="weather-imagery" id="weather2">
+          <picture class="weather-pic">
+            <img src="#" alt="weather" id="weather-icon2" />
+          </picture>
+          <h3><span id="temp2">70</span>°F</h3>
+          <h3><span id="humid2"></span>%</h3>
         </div>
         <div class="weather-details">
-        <h3 id="weather-descriptor">Sunny</h3>
-        <div class="windspeed"><span id="windspeed"></span> mph</div>
-        <div class="windchill"><span id="windchill">NA</span></div>
+          <h3 id="weather-descriptor2">Sunny</h3>
         </div>
-        <!-- <iframe src="https://www.accuweather.com/en/us/carlsbad/92008/daily-weather-forecast/327151" width="100%" height="300" frameborder="0"></iframe> -->
+        <div class="weather-imagery" id="weather3">
+          <picture class="weather-pic">
+            <img src="#" alt="weather" id="weather-icon3" />
+          </picture>
+          <h3><span id="temp3">70</span>°F</h3>
+          <h3><span id="humid3"></span>%</h3>
+        </div>
+        <div class="weather-details">
+          <h3 id="weather-descriptor3">Sunny</h3>
+        </div>
       </section>
-      
     </main>
-    
+
     <footer>
-      <p>Contact Us: 123 Main Street, Anytown USA | Phone: (555) 555-1234 | Email: info@organiclocallygrownfoods.com</p>
-      <div id="chamberInfo">
-        <div id="chamberLocationInfo">
-          <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" />
-          <div id="chamberAddress">
-            <h3>Gilbert Chamber of Commerce</h3>
-            <p>111 N Gilbert Rd</p>
-            <p>Gilbert, AZ 85234</p>
+      <div id="companyInfo">
+        <div id="companyLocationInfo">
+          <img src="images/logo.webp" alt="Bountiful Foods Logo" />
+          <div id="companyAddress">
+            <h3>Bountiful Foods</h3>
+            <p>123 Main Street</p>
+            <p>Carlsbad, California</p>
           </div>
         </div>
-        <div id="chamberContactInfo">
-          <p>gilbertaz.com</p>
-          <p>(123) 456-7890</p>
+        <div id="companyContactInfo">
+          <p>(555) 555-5555</p>
           <p>📍 Location Map</p>
+          <p>Ask about our Food Truck Locations</p>
         </div>
       </div>
       <div id="endInfo">
@@ -154,11 +210,9 @@
         </p>
       </div>
     </footer>
-    <!-- <script src="scripts/app.js"></script> -->
+    <script src="scripts/app.js"></script>
     <script src="scripts/weather-api.js"></script>
-    <!-- <script src="scripts/windchill.js"></script> -->
-    <!-- <script src="scripts/lazyloading.js"></script> -->
-    <!-- <script src="scripts/resize.js"></script>
-    <script src="scripts/spotlight.js"></script> -->
+    <script src="scripts/lazyloading.js"></script>
+    <script src="scripts/cookie.js"></script>
   </body>
 </html>

@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 750px)"
+      href="styles/base.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 751px) and (max-width: 949px)"
+      href="styles/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 950px)"
+      href="styles/large.css"
+    />
+  </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
           <a id="logo_link" href="index.html">
-            <img
-              src="images/logo.webp"
-              alt="Bountiful Foods logo"
-            />
+            <img src="images/logo.webp" alt="Bountiful Foods logo" />
           </a>
           <button class="mobile-nav-toggle">
             <img
@@ -27,58 +43,116 @@
           </button>
           <nav class="primary-navigation">
             <ul role="list" class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="fresh.html">Fresh</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li class="socialLinks">
-            <a href="#"
-              ><img
-                src="images/icon-facebook.png"
-                alt="facebook-logo"
-                style="width: 2rem"
-            /></a>
-          </li>
-          <li class="socialLinks">
-            <a href="#"
-              ><img
-                src="images/icon-twitter.png"
-                alt="twitter-logo"
-                style="width: 2rem"
-            /></a>
-          </li>
-          <li class="socialLinks">
-            <a href="#"
-              ><img
-                src="images/icon-instagram.png"
-                alt="instagram-logo"
-                style="width: 2rem"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-    
+              <li><a href="index.html">Home</a></li>
+              <li><a href="fresh.html">Fresh</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-facebook.png"
+                    alt="facebook-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-twitter.png"
+                    alt="twitter-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+              <li class="socialLinks">
+                <a href="#"
+                  ><img
+                    src="images/icon-instagram.png"
+                    alt="instagram-logo"
+                    style="width: 2rem"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <main>
-      
+      <section class="contact-us">
+        <div class="visit-us">
+          <h1>Visit Us</h1>
+          <h3>Bountiful Foods</h3>
+          <p>123 Main Street</p>
+          <p>Carlsbad, California</p>
+          <p>(555) 555-5555</p>
+        </div>
+        <div class="about-us">
+          <h1>About Us</h1>
+          <p>
+            Bountiful Foods is a small business that specializes in organic,
+            locally grown foods. We have a store located in Carlsbad, California
+            as well as many food trucks that cover the coastal area from Los
+            Angeles to San Diego. We sell fruits and produce directly from the
+            farmers in the area, but also use some national and international
+            suppliers. Our owner-operated company caters to walk in traffic at
+            the storefront and the food trucks. We deliver and manage those
+            orders on the phone and the website.
+          </p>
+        </div>
+        <div class="mission">
+          <h1>Our Mission</h1>
+          <p>
+            Our mission is to provide fresh and healthy food options, including
+            organic, made to order, fruit drinks and fruit bags, to the local
+            population and to tourists vising the coastal areas.
+          </p>
+        </div>
+
+        <form class="contact-us-form" method="get">
+          <fieldset>
+            <legend>Get in Touch</legend>
+            <fieldset>
+              <label class="top"
+                >First Name* <input type="text" name="firstName" required
+              /></label>
+              <label class="top"
+                >Email*
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="someone@gmail.com"
+                  required
+              /></label>
+              <label class="top"
+              >Message
+              <textarea
+                name="message"
+                class="message"
+                rows="4"
+                cols="35"
+              ></textarea>
+              </label>
+            </fieldset>
+
+            <input type="submit" value="Contact Us" class="submitBtn" />
+          </fieldset>
+        </form>
+      </section>
     </main>
-    
+
     <footer>
-      <p>Contact Us: 123 Main Street, Anytown USA | Phone: (555) 555-1234 | Email: info@organiclocallygrownfoods.com</p>
-      <div id="chamberInfo">
-        <div id="chamberLocationInfo">
-          <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" />
-          <div id="chamberAddress">
-            <h3>Gilbert Chamber of Commerce</h3>
-            <p>111 N Gilbert Rd</p>
-            <p>Gilbert, AZ 85234</p>
+      <div id="companyInfo">
+        <div id="companyLocationInfo">
+          <img src="images/logo.webp" alt="Bountiful Foods Logo" />
+          <div id="companyAddress">
+            <h3>Bountiful Foods</h3>
+            <p>123 Main Street</p>
+            <p>Carlsbad, California</p>
           </div>
         </div>
-        <div id="chamberContactInfo">
-          <p>gilbertaz.com</p>
-          <p>(123) 456-7890</p>
+        <div id="companyContactInfo">
+          <p>(555) 555-5555</p>
           <p>📍 Location Map</p>
+          <p>Ask about our Food Truck Locations</p>
         </div>
       </div>
       <div id="endInfo">
@@ -95,5 +169,6 @@
         </p>
       </div>
     </footer>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
